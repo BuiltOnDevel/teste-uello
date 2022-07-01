@@ -17,10 +17,13 @@ Rodando o comando: `composer install`
 Dentro da pasta raiz do projeto, necessário roda o comando para o deploy do banco:
 `mysql -u <user> -p -h <host> < script.sql;`
 
-5-Rodando a aplicação
+5- Criando a tabela locale_ship com a migrations 
+`php artisan migrate`
+
+6-Rodando a aplicação
 No terminal, roda o comando `php artisan -serve`
 
 por default o servidor embutido irá roda na porta 8000
 
-6- Acessando a aplicação
+7- Acessando a aplicação
 no navegador, utilizar o endereço http://localhost:8000/load
